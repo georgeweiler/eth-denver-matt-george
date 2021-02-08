@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import theme from './styles/theme';
