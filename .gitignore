@@ -1,1 +1,12 @@
+.DS_Store
+.env
+.env.development.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist.js
+.npm
+.eslintcache
+.idea/*
 node_modules
+

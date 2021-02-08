@@ -1,2 +1,11 @@
+<<<<<<< HEAD
 node_modules
 public
+=======
+blueprints/**/files/**
+coverage/**
+node_modules/**
+dist/**
+*.spec.js
+app/index.html
+>>>>>>> 17e48ee4201efdf40f95231b8a999c81748ce2f8
