@@ -1,41 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { Navbar, Button } from 'react-bootstrap';
+import Title from '../images/icon.png';
 
-const Navbar = () => (
-  <>
-    <Navbar bg="light">
-      <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-    </Navbar>
-    <br />
-    <Navbar bg="light">
-      <Navbar.Brand>Brand text</Navbar.Brand>
-    </Navbar>
-    <br />
-    <Navbar bg="dark">
-      <Navbar.Brand href="#home">
-        <img
-          src="/logo.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-          alt="React Bootstrap logo"
-        />
-      </Navbar.Brand>
-    </Navbar>
-    <br />
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">
-        <img
-          alt=""
-          src="/logo.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{' '}
-        React Bootstrap
-      </Navbar.Brand>
-    </Navbar>
-  </>
+const Nav = ({ signedIn }) => (
+  <Navbar bg="black" expand="lg">
+    <Navbar.Brand href="/" className="mr-auto">
+      <img src={Title} width="75" height="25" alt="Logo" />
+    </Navbar.Brand>
+    <Navbar.Brand>
+      <Button className="mr-sm-2" variant="light">
+        Log In
+      </Button>
+    </Navbar.Brand>
+  </Navbar>
 );
 
-export default Navbar;
+Nav.propTypes = {
+  signedIn: PropTypes.bool.isRequired,
+};
+
+export default Nav;
