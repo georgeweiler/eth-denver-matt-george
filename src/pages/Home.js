@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { Image, Button, Accordion, Card } from 'react-bootstrap';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import HomeHero from '../images/Home-Hero-Image.png';
-import MetaMask from '../images/Home-MetaMask.png';
-import MetaMaskConnect from '../images/Home-MetaMask-Connect.png';
+import HomeHero from '../static/images/Home-Hero-Image.png';
+import MetaMask from '../static/images/Home-MetaMask.png';
+import MetaMaskConnect from '../static/images/Home-MetaMask-Connect.png';
 
 const HeroContents = styled.div`
   padding: 100px 0 0 140px;
