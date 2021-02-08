@@ -1,18 +1,14 @@
 import React from 'react';
 import { Switch, withRouter } from 'react-router-dom';
 import Route from './components/Route';
+import Home from './pages/Home';
 import { Container, Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const routes = [
   {
     path: '/',
-    component: () => (
-      <>
-        <div className="test-class">hello world</div>
-        <Link to="/dashboard">Go to dashboard</Link>
-      </>
-    ),
+    component: Home,
     exact: true,
     publicRoute: true,
   },
