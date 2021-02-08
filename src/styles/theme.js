@@ -93,7 +93,6 @@ export const Colors = {
   terracotta900: '#992400',
 };
 
-
 const theme = {
   ...Colors,
 };
