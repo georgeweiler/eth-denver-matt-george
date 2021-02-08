@@ -2,16 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Image, Button, Accordion, Card } from 'react-bootstrap';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import HomeHero from '../static/images/Home-Hero-Image.png';
-import MetaMask from '../static/images/Home-MetaMask.png';
-import MetaMaskConnect from '../static/images/Home-MetaMask-Connect.png';
+import Navbar from '../../components/Navbar';
+import HomeHero from './HomeHero';
+import MetaMask from '../../static/images/Home-MetaMask.png';
+import MetaMaskConnect from '../../static/images/Home-MetaMask-Connect.png';
 
-const HeroContents = styled.div`
-  padding: 100px 0 0 140px;
-  width: 600px;
-`;
 const HomeDivider = styled.div`
   width: 100%;
   height: 10px;
@@ -34,22 +29,7 @@ const FAQ = styled.div`
 const Home = () => (
   <>
     <Navbar signedIn={false} />
-    <Hero imgSrc={HomeHero} large>
-      <HeroContents>
-        <h1 className="mb-4">
-          Like creative content?
-          <br />
-          We&apos;ve got you covered.
-        </h1>
-        <p className="mb-4">
-          Subscribe to your favorite entertainers, and receive exclusive content
-          & tokens.
-        </p>
-        <Button as={Link} to="/dashboard" variant="primary">
-          Sign Up
-        </Button>
-      </HeroContents>
-    </Hero>
+    <HomeHero />
     <HomeDivider />
     <Section>
       <Image src={MetaMask} fluid />
