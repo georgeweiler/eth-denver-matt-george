@@ -33,10 +33,11 @@
     "@typescript-eslint/no-unused-vars": ["error"],
     "prettier/prettier": [
       "error",
-      { "printWidth": 80, "trailingComma": "all" }
+      { "printWidth": 80, "trailingComma": "all", "singleQuote": true }
     ],
 
     "no-use-before-define": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/forbid-prop-types": "off",
     "react/require-default-props": "off",
     "react/no-unused-prop-types": "off",
