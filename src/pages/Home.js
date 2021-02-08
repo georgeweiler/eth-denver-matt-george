@@ -8,13 +8,6 @@ import HomeHero from '../images/Home-Hero-Image.png';
 import MetaMask from '../images/Home-MetaMask.png';
 import MetaMaskConnect from '../images/Home-MetaMask-Connect.png';
 
-// const Hero = styled.div`
-//   width: 100%;
-//   height: 420px;
-//   background-image: url(${HomeHero});
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// `;
 const HeroContents = styled.div`
   padding: 100px 0 0 140px;
   width: 600px;
@@ -34,6 +27,9 @@ const Section = styled.div`
 `;
 const SectionText = styled.div`
   width: 26vw;
+`;
+const FAQ = styled.div`
+  width: 50vw;
 `;
 const Home = () => (
   <>
@@ -110,8 +106,8 @@ const Home = () => (
     </Section>
     <HomeDivider />
     <Section>
-      <SectionText>
-        <h3 className="mb-4">Frequently Asked Questions</h3>
+      <FAQ>
+        <h3 className="mb-4 text-center">Frequently Asked Questions</h3>
         <Accordion defaultActiveKey="0">
           <Card>
             <Card.Header>
@@ -147,11 +143,11 @@ const Home = () => (
             </Card.Header>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-                Short answer: Yes. Longer answer: still distills down to yes.
-                Ultimately, we&apos;re not opposed if you <i>choose</i> to
-                involve third parties in a transaction because you consciously
-                desire the services they provide. However, we built this site as
-                an alternative for individuals who don&apos;t want or need the
+                Short answer: Yes. Long answer: still yes. Ultimately,
+                we&apos;re not opposed if you <i>choose</i> to involve third
+                parties in a transaction because you consciously desire the
+                services they provide. However, we built this site as an
+                alternative for individuals who don&apos;t want or need the
                 ancillary benefits that banks provide.
                 <br />
                 <br />
@@ -184,7 +180,7 @@ const Home = () => (
             </Accordion.Collapse>
           </Card>
         </Accordion>
-      </SectionText>
+      </FAQ>
     </Section>
   </>
 );
