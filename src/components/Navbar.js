@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Navbar, Button } from 'react-bootstrap';
-import Title from '../images/icon.png';
+import Title from '../static/images/icon.png';
 
 const Nav = ({ signedIn }) => (
   <Navbar bg="black" expand="lg">
