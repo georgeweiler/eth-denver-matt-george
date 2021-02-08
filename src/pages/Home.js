@@ -45,7 +45,9 @@ const Home = () => (
           Subscribe to your favorite entertainers, and receive exclusive content
           & tokens.
         </p>
-        <Button variant="primary">Sign Up</Button>
+        <Button as={Link} to="/dashboard" variant="primary">
+          Sign Up
+        </Button>
       </HeroContents>
     </Hero>
     <HomeDivider />
@@ -109,7 +111,7 @@ const Home = () => (
       <FAQ>
         <h3 className="mb-4 text-center">Frequently Asked Questions</h3>
         <Accordion defaultActiveKey="0">
-          <Card>
+          <Card bg="dark" style={{ color: 'white' }}>
             <Card.Header>
               <Accordion.Toggle
                 as={Button}
@@ -130,7 +132,7 @@ const Home = () => (
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card bg="dark" style={{ color: 'white' }}>
             <Card.Header>
               <Accordion.Toggle
                 as={Button}
@@ -156,7 +158,7 @@ const Home = () => (
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card bg="dark" style={{ color: 'white' }}>
             <Card.Header>
               <Accordion.Toggle
                 as={Button}
