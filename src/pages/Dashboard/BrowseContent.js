@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import { contentCreators } from './contentCreators';
+import { contentCreators } from '../../static/data/contentCreators';
 
 const FlexContainer = styled.div`
   display: flex;
@@ -60,22 +60,22 @@ const BrowseableContent = () => {
     <div>
       <h2>Browse for new creators</h2>
       <FlexContainer>
-        {contentCreators.map(({ imgSrc, description, title, slug }) => {
+        {contentCreators.map(creator => {
           return (
-            <Link to={`/creator/${slug}`} key={slug}>
+            <Link to={`/creator/${creator.slug}`} key={creator.slug}>
               <Card style={{ width: '18rem', margin: '1rem' }}>
                 <HoverText>
                   <Card.Img
                     variant="top"
-                    src={imgSrc}
+                    src={creator.thumbnailSrc}
                     style={{ width: 286, height: 286 }}
                   />
                   <div className="fadedbox">
-                    <div className="title text">{description}</div>
+                    <div className="title text">{creator.description}</div>
                   </div>
                 </HoverText>
                 <Card.Body>
-                  <Card.Title>{title}</Card.Title>
+                  <Card.Title>{creator.title}</Card.Title>
                 </Card.Body>
               </Card>
             </Link>
