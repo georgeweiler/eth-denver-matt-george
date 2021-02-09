@@ -2,10 +2,10 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { Button, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Check } from 'react-bootstrap-icons';
 import { contentCreators } from '../../static/data/contentCreators';
 import Hero from '../../components/Hero';
-
-import { Check } from 'react-bootstrap-icons';
+import createFlow from '../../utils/Superfluid';
 
 const HeroContainer = styled.div`
   margin-bottom: 150px;
@@ -24,7 +24,7 @@ const HeroContainer = styled.div`
 
 const CreatorInfo = styled(Container)`
   padding: 2rem 6rem;
-  background-color: ${p => p.theme.gray700};
+  background-color: ${(p) => p.theme.gray700};
   border-radius: 4px;
   .creator-title {
     text-align: center;
@@ -39,7 +39,7 @@ const SubscriptionBoxes = styled(Container)`
   justify-content: space-between;
   .subscription-box {
     border-radius: 4px;
-    background-color: ${p => p.theme.gray700};
+    background-color: ${(p) => p.theme.gray700};
     padding: 2rem;
     width: 300px;
     min-height: 500px;
@@ -67,18 +67,12 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
   const subscriptionOptions = [
     {
       tier: 'Follower',
-      price: '5 dai/month',
-      onSubscribeClick: () => {
-        console.log('yoo');
-      },
+      price: 5,
       benefits: ['All Public Content', 'Exclusive Content'],
     },
     {
       tier: 'Fan',
-      price: '5 dai/month',
-      onSubscribeClick: () => {
-        console.log('yoo');
-      },
+      price: 10,
       benefits: [
         'Follower Benefits',
         'NFT token awarded after 3 consecutive months',
@@ -86,11 +80,8 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
       ],
     },
     {
-      tier: 'Fan',
-      price: '5 dai/month',
-      onSubscribeClick: () => {
-        console.log('yoo');
-      },
+      tier: 'Super Fan',
+      price: 15,
       benefits: [
         'Fan Benefits',
         'Direct Communications',
@@ -103,58 +94,50 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
     <div>
       <HeroContainer>
         <Hero imgSrc={heroSrc} />
-        <img className="profile-img" src={thumbnailSrc} />
+        <img className="profile-img" src={thumbnailSrc} alt="Profile" />
       </HeroContainer>
       <CreatorInfo>
         <h2 className="creator-title">{title}</h2>
         <p className="creator-desc">{description}</p>
       </CreatorInfo>
       <SubscriptionBoxes>
-        {subscriptionOptions.map(opt => {
-          return (
-            <div className="subscription-box" key={opt.tier}>
-              <h3 className="title">{opt.tier}</h3>
-              <h2 className="price">{opt.price}</h2>
-              <Button
-                variant="warning"
-                className="subscribe-btn"
-                onClick={opt.onSubscribeClick}
-              >
-                Subscribe
-              </Button>
-              <div className="benefits-container">
-                {opt.benefits.map(benefit => {
-                  return (
-                    <div key={benefit} className="benefit">
-                      <Check color="white" /> {benefit}
-                    </div>
-                  );
-                })}
-              </div>
+        {subscriptionOptions.map((opt) => (
+          <div className="subscription-box" key={opt.tier}>
+            <h3 className="title">{opt.tier}</h3>
+            <h2 className="price">{opt.price} per/month</h2>
+            <Button
+              variant="warning"
+              className="subscribe-btn"
+              onClick={() => createFlow(opt.price)}
+            >
+              Subscribe
+            </Button>
+            <div className="benefits-container">
+              {opt.benefits.map((benefit) => (
+                <div key={benefit} className="benefit">
+                  <Check color="white" /> {benefit}
+                </div>
+              ))}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </SubscriptionBoxes>
     </div>
   );
 };
 
-const CreatorRouter = () => {
-  return (
-    <Route
-      path={`/creator/:creatorSlug`}
-      render={({
-        match: {
-          params: { creatorSlug },
-        },
-      }) => {
-        const creator = contentCreators.find(
-          ({ slug }) => slug === creatorSlug,
-        );
-        return <CreatorPage {...creator} />;
-      }}
-    />
-  );
-};
+const CreatorRouter = () => (
+  <Route
+    path={`/creator/:creatorSlug`}
+    render={({
+      match: {
+        params: { creatorSlug },
+      },
+    }) => {
+      const creator = contentCreators.find(({ slug }) => slug === creatorSlug);
+      return <CreatorPage {...creator} />;
+    }}
+  />
+);
 
 export default CreatorRouter;

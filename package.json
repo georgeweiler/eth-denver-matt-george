@@ -3,6 +3,10 @@
   "version": "0.4.5",
   "private": true,
   "dependencies": {
+    "@ethersproject/contracts": "^5.0.10",
+    "@ethersproject/providers": "^5.0.22",
+    "@superfluid-finance/js-sdk": "^0.3.2",
+    "@truffle/contract": "^4.3.6",
     "@web3-react/abstract-connector": "^6.0.7",
     "@web3-react/core": "^6.0.9",
     "@web3-react/injected-connector": "^6.0.7",
