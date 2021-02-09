@@ -46,7 +46,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailA,
     heroSrc: heroA,
     description:
-      'CO managed some lightning fast block during many chain since Dash mining lots of permissioned ledger after some validator',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'This Might Get Weird',
     slug: 'This-Might-Get-Weird',
   },
@@ -54,7 +54,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailB,
     heroSrc: heroB,
     description:
-      'Ravencoin accompanied by a digital identity because IOTA looked at a provably fair faucet behind few stale block',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Belief in Fatherhood',
     slug: 'Belief-in-Fatherhood',
   },
@@ -62,7 +62,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailC,
     heroSrc: heroC,
     description:
-      'Satoshi Nakamoto froze few trusted fiat until few zero confirmation transaction',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Gabbie Hanna',
     slug: 'Gabbie-Hanna',
   },
@@ -70,7 +70,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailD,
     heroSrc: heroD,
     description:
-      'Zcash forgot some hashrate during the multi signature since Dash forgot a immutable escrow',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Molly Burke',
     slug: 'Molly-Burke',
   },
@@ -78,7 +78,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailE,
     heroSrc: heroE,
     description:
-      'Although Dash controls many considerable nonce, Augur expected some testnet until few arbitrage',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Try Guys',
     slug: 'The-Try-Guys',
   },
@@ -86,14 +86,15 @@ export const contentCreators = [
     thumbnailSrc: thumbnailF,
     heroSrc: heroF,
     description:
-      'Golem should be a lightning fast private key until many multi signature when blockchain thought the quick zero knowledge proof after the zero knowledge proof',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Data School',
     slug: 'Data-School',
   },
   {
     thumbnailSrc: thumbnailG,
     heroSrc: heroG,
-    description: 'Because Basic Attention Token expected many moon',
+    description:
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Christine McConnell',
     slug: 'Christine-McConnell',
   },
@@ -101,7 +102,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailH,
     heroSrc: heroH,
     description:
-      'hey mining some safe hashrate because Silk Road chose few peer-to-peer network after a address',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Epic Rap Battles of History',
     slug: 'Epic-Rap-Battles-of-History',
   },
@@ -109,7 +110,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailI,
     heroSrc: heroI,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Platinum Perfection',
     slug: 'Platinum-Perfection',
   },
@@ -117,7 +118,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailJ,
     heroSrc: heroJ,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Ukelele Teacher',
     slug: 'The-Ukelele-Teacher',
   },
@@ -125,7 +126,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailK,
     heroSrc: heroK,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Cory Henry',
     slug: 'Cory-Henry',
   },
@@ -133,7 +134,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailL,
     heroSrc: heroL,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Jake and Amir',
     slug: 'Jake-and-Amir',
   },
@@ -141,7 +142,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailM,
     heroSrc: heroM,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: '2 black girls 1 rose',
     slug: '2-black-girls-1-rose',
   },
@@ -149,7 +150,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailN,
     heroSrc: heroN,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Crime Junkie',
     slug: 'Crime-Junkie',
   },
@@ -157,7 +158,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailO,
     heroSrc: heroO,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Dungeons & Daddies',
     slug: 'Dungeons-&-Daddies',
   },
@@ -165,7 +166,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailP,
     heroSrc: heroP,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Mueller She Wrote',
     slug: 'Mueller-She-Wrote',
   },
@@ -173,7 +174,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailQ,
     heroSrc: heroQ,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Snap Judgment',
     slug: 'Snap-Judgment',
   },
@@ -181,7 +182,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailR,
     heroSrc: heroR,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Meat Gang',
     slug: 'The-Meat-Gang',
   },
@@ -189,7 +190,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailS,
     heroSrc: heroS,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'RAC',
     slug: 'RAC',
   },
@@ -197,7 +198,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailT,
     heroSrc: heroT,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Alissa White Gluz',
     slug: 'Alissa-White-Gluz',
   },
@@ -205,7 +206,7 @@ export const contentCreators = [
     thumbnailSrc: thumbnailU,
     heroSrc: heroU,
     description:
-      'ERC20 token standard stacks many burned raiden network during the decentralised autonomous organisation',
+      'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Ben-Folds',
     slug: 'Ben-Folds',
   },
