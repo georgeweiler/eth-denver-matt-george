@@ -1,27 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from 'react-bootstrap';
+import { Switch, Route } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
-import ProfilePhoto from '../../static/images/Profile-photo.jpeg';
+import Sidebar from './Sidebar';
+import Subscriptions from './Subscriptions';
+import Tokens from './Tokens';
+import Uploads from './Uploads';
 
-const LeftBar = styled.div`
-  min-height: 100vh;
-  width: 300px;
-  background-color: #333;
+const PageWrapper = styled.div`
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-content: flex-start;
+`;
+const MainContent = styled.div`
+  padding: 20px;
+  width: 100%;
+  height: 100%;
 `;
 
 const Profile = () => (
   <>
     <Navbar signedIn />
-    <LeftBar>
-      <Image className="mt-4" src={ProfilePhoto} width="100px" roundedCircle />
-      <h5 className="mt-3">Your Profile</h5>
-      <h7>Matt Martin</h7>
-    </LeftBar>
+    <PageWrapper>
+      <Sidebar />
+      <MainContent>
+        <Switch>
+          <Route exact path="/profile">
+            <Subscriptions />
+          </Route>
+          <Route path="/profile/uploads">
+            <Uploads />
+          </Route>
+          <Route path="/profile/tokens">
+            <Tokens />
+          </Route>
+        </Switch>
+      </MainContent>
+    </PageWrapper>
   </>
 );
 
