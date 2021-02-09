@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
 
 const uploadData = [
   { num: 1, title: 'Upload 1', date: 'Jan 2, 2021', views: 100, likes: 89 },
@@ -11,6 +11,9 @@ const uploadData = [
 const Uploads = () => (
   <>
     <h1 className="mb-4">Uploads</h1>
+    <Button variant="primary" className="mb-4">
+      New Upload
+    </Button>
     <Table striped bordered hover variant="dark">
       <thead>
         <tr>
