@@ -22,7 +22,6 @@ const routes = [
   {
     path: '/profile',
     component: Profile,
-    exact: true,
     publicRoute: true,
   },
   {
