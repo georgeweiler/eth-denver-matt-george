@@ -1,29 +1,35 @@
 import React from 'react';
 import { createFlow, getSFUser } from './utils/SuperFluid';
+import { contentCreators } from './static/data/contentCreators';
 
 export const SuperFluidContext = React.createContext();
 
 export const SuperFluidProvider = (props) => {
   const [state, setState] = React.useState({
     user: {},
+    subscriptions: [],
   });
 
   return (
     <SuperFluidContext.Provider
       value={{
-        user: state.user,
-        createFlow: async (amt) => {
-          try {
-            console.log('creating flow');
-            createFlow(amt);
-            console.log('done');
-          } catch (error) {
-            console.log('OIUO', error);
-          }
+        ...state,
+        createFlow: async (amt, address) => {
+          console.log('passing it on, ', amt, address);
+          createFlow(amt, address);
         },
         getUser: async () => {
           const user = await getSFUser();
+          console.log('OI OI OI USER ', user);
+          const subscriptions =
+            contentCreators.filter((author) =>
+              user?.cfa?.flows?.outFlows
+                .map((flow) => flow.receiver)
+                .includes(author.address),
+            ) || [];
+
           setState({
+            subscriptions,
             user,
           });
         },

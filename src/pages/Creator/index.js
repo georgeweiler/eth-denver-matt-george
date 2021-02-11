@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import { Button, Container } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -6,6 +6,10 @@ import { Check } from 'react-bootstrap-icons';
 import { contentCreators } from '../../static/data/contentCreators';
 import Hero from '../../components/Hero';
 import { SuperFluidContext } from '../../SFContext';
+
+const SubscriberContainer = styled(Container)`
+  min-height: 600px;
+`;
 
 const HeroContainer = styled.div`
   margin-bottom: 150px;
@@ -63,8 +67,27 @@ const SubscriptionBoxes = styled(Container)`
   }
 `;
 
-const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
+const CreatorPage = ({
+  heroSrc,
+  thumbnailSrc,
+  title,
+  description,
+  address,
+}) => {
   const superFluid = useContext(SuperFluidContext);
+
+  const isSubscriber = React.useMemo(() => {
+    return (
+      superFluid.subscriptions.filter((author) => author.address === address)
+        .length > 0
+    );
+  }, [superFluid.subscriptions]);
+
+  useEffect(() => {
+    if (Object.keys(superFluid.user).length === 0) {
+      superFluid.getUser();
+    }
+  }, [superFluid.user]);
 
   const subscriptionOptions = [
     {
@@ -92,6 +115,24 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
     },
   ];
 
+  if (isSubscriber) {
+    return (
+      <div>
+        <HeroContainer>
+          <Hero imgSrc={heroSrc} />
+          <img className="profile-img" src={thumbnailSrc} alt="Profile" />
+        </HeroContainer>
+        <CreatorInfo>
+          <h2 className="creator-title">{title}</h2>
+          <p className="creator-desc">{description}</p>
+        </CreatorInfo>
+        <SubscriberContainer>
+          <h2 className="creator-title">YOU ARE A SUBSCRIBER!</h2>
+        </SubscriberContainer>
+      </div>
+    );
+  }
+
   return (
     <div>
       <HeroContainer>
@@ -105,17 +146,15 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
       <SubscriptionBoxes>
         {subscriptionOptions.map((opt) => (
           <div className="subscription-box" key={opt.tier}>
+            {!address && 'NO ADDRESS'}
             <h3 className="title">{opt.tier}</h3>
             <h2 className="price">{opt.price} per/month</h2>
             <Button
               variant="warning"
               className="subscribe-btn"
               onClick={() => {
-                try {
-                  superFluid.createFlow(opt.price);
-                } catch (error) {
-                  console.log(error);
-                }
+                console.log('creating flow for:', opt.price, address);
+                superFluid.createFlow(opt.price, address);
               }}
             >
               Subscribe
