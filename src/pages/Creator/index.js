@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Check } from 'react-bootstrap-icons';
 import { contentCreators } from '../../static/data/contentCreators';
 import Hero from '../../components/Hero';
-import createFlow from '../../utils/Superfluid';
+import createFlow from '../../utils/SuperFluid';
 
 const HeroContainer = styled.div`
   margin-bottom: 150px;
