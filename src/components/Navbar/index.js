@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Navbar, Button } from 'react-bootstrap';
-import Title from '../static/images/icon.png';
+import { Navbar } from 'react-bootstrap';
+import Title from '../../static/images/icon.png';
+import Identicon from './Identicon';
 
 const Nav = ({ signedIn }) => (
   <Navbar bg="black" expand="lg">
@@ -10,9 +11,7 @@ const Nav = ({ signedIn }) => (
       <img src={Title} width="75" height="25" alt="Logo" />
     </Navbar.Brand>
     <Navbar.Brand>
-      <Button as={Link} to="/dashboard" className="mr-sm-2" variant="light">
-        Log In
-      </Button>
+      <Identicon />
     </Navbar.Brand>
   </Navbar>
 );
