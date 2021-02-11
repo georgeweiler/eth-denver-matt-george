@@ -15,12 +15,10 @@ export const SuperFluidProvider = (props) => {
       value={{
         ...state,
         createFlow: async (amt, address) => {
-          console.log('passing it on, ', amt, address);
           createFlow(amt, address);
         },
         getUser: async () => {
           const user = await getSFUser();
-          console.log('OI OI OI USER ', user);
           const subscriptions =
             contentCreators.filter((author) =>
               user?.cfa?.flows?.outFlows

@@ -44,10 +44,7 @@ export const createFlow = async (amt, address) => {
 
   // Create flow
   const OneDaiPerMonth = 385802469136;
-  console.log('creating the FLOW', {
-    recipient: address,
-    flowRate: amt * OneDaiPerMonth,
-  });
+
   await carol.flow({
     recipient: address,
     flowRate: amt * OneDaiPerMonth,

@@ -153,7 +153,6 @@ const CreatorPage = ({
               variant="warning"
               className="subscribe-btn"
               onClick={() => {
-                console.log('creating flow for:', opt.price, address);
                 superFluid.createFlow(opt.price, address);
               }}
             >
