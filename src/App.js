@@ -10,6 +10,7 @@ import { getSFUser } from './utils/SuperFluid';
 import { SuperFluidProvider } from './SFContext';
 import 'react-notifications/lib/notifications.css';
 
+// I hope this works!
 const App = () => {
   useEffect(() => {
     async function init() {
