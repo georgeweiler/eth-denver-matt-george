@@ -81,7 +81,8 @@
     "webpack-merge": "^4.2.1"
   },
   "engines": {
-    "node": ">=12.19.0"
+    "node": ">=12.19.0",
+    "npm": ">=6.14.8"
   },
   "resolutions": {
     "moment": "^2.25.3",
@@ -95,7 +96,7 @@
     "lint": "eslint src",
     "start": "react-scripts start",
     "legacy-start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=8128 build && cp ./_redirects build/",
+    "build": "react-scripts build",
     "build:staging": "env-cmd -f .env.staging yarn build",
     "ci-test": "CI=true react-scripts test",
     "test": "react-scripts test",

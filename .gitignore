@@ -9,4 +9,5 @@ dist.js
 .eslintcache
 .idea/*
 node_modules
+build/
 
