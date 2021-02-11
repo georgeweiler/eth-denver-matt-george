@@ -49,6 +49,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'This Might Get Weird',
     slug: 'This-Might-Get-Weird',
+    address: '0xa365DCAF263377CcE8a795EAF499ACd23776C075',
   },
   {
     thumbnailSrc: thumbnailB,
@@ -57,6 +58,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Belief in Fatherhood',
     slug: 'Belief-in-Fatherhood',
+    address: '0x4B66455B8d0529FBEe9fb5a4d75B2b0AE35D3cEd',
   },
   {
     thumbnailSrc: thumbnailC,
@@ -65,6 +67,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Gabbie Hanna',
     slug: 'Gabbie-Hanna',
+    address: '0x64Afea77463907A9ff1A998f05ee588BCe1E6b3c',
   },
   {
     thumbnailSrc: thumbnailD,
@@ -73,6 +76,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Molly Burke',
     slug: 'Molly-Burke',
+    address: '0xDF84006972a841185aeD146DbaCB1BfAEbDd39EC',
   },
   {
     thumbnailSrc: thumbnailE,
@@ -81,6 +85,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Try Guys',
     slug: 'The-Try-Guys',
+    address: '0x45d55330eb268b616406d77b702C4fc91395be7E',
   },
   {
     thumbnailSrc: thumbnailF,
@@ -89,6 +94,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Data School',
     slug: 'Data-School',
+    address: '0x4aAF8b218FBcC86B1376C3139418064f23124B0E',
   },
   {
     thumbnailSrc: thumbnailG,
@@ -97,6 +103,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Christine McConnell',
     slug: 'Christine-McConnell',
+    address: '0x7FD645ebf3a1f7e2B2FE0E456B4c997fa1219bD9',
   },
   {
     thumbnailSrc: thumbnailH,
@@ -105,6 +112,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Epic Rap Battles of History',
     slug: 'Epic-Rap-Battles-of-History',
+    address: '0x1C0a5445B54E400b3D2660cE22960C5466C1b93A',
   },
   {
     thumbnailSrc: thumbnailI,
@@ -113,6 +121,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Platinum Perfection',
     slug: 'Platinum-Perfection',
+    address: '0x66A25F1FB6807b957C1f4f4691B23436e016C079',
   },
   {
     thumbnailSrc: thumbnailJ,
@@ -121,6 +130,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Ukelele Teacher',
     slug: 'The-Ukelele-Teacher',
+    address: '0x357Ba8a6dc618C36530705c856F6Af2223AFC6D2',
   },
   {
     thumbnailSrc: thumbnailK,
@@ -129,6 +139,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Cory Henry',
     slug: 'Cory-Henry',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailL,
@@ -137,6 +148,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Jake and Amir',
     slug: 'Jake-and-Amir',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailM,
@@ -145,6 +157,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: '2 black girls 1 rose',
     slug: '2-black-girls-1-rose',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailN,
@@ -153,6 +166,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Crime Junkie',
     slug: 'Crime-Junkie',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailO,
@@ -161,6 +175,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Dungeons & Daddies',
     slug: 'Dungeons-&-Daddies',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailP,
@@ -169,6 +184,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Mueller She Wrote',
     slug: 'Mueller-She-Wrote',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailQ,
@@ -177,6 +193,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Snap Judgment',
     slug: 'Snap-Judgment',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailR,
@@ -185,6 +202,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'The Meat Gang',
     slug: 'The-Meat-Gang',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailS,
@@ -193,6 +211,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'RAC',
     slug: 'RAC',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailT,
@@ -201,6 +220,7 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Alissa White Gluz',
     slug: 'Alissa-White-Gluz',
+    address: '',
   },
   {
     thumbnailSrc: thumbnailU,
@@ -209,5 +229,6 @@ export const contentCreators = [
       'Experience history in a whole new way through amazing verses written to killer beats. We don’t just teach history, we bring it to life through meticulously crafted songs that infuse historical figures with personality, life, and energy that you simply don’t find in your traditional textbook or classroom.',
     title: 'Ben-Folds',
     slug: 'Ben-Folds',
+    address: '',
   },
 ];
