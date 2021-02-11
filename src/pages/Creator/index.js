@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Route } from 'react-router-dom';
 import { Button, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Check } from 'react-bootstrap-icons';
 import { contentCreators } from '../../static/data/contentCreators';
 import Hero from '../../components/Hero';
-import createFlow from '../../utils/SuperFluid';
+import { SuperFluidContext } from '../../SFContext';
 
 const HeroContainer = styled.div`
   margin-bottom: 150px;
@@ -64,6 +64,8 @@ const SubscriptionBoxes = styled(Container)`
 `;
 
 const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
+  const superFluid = useContext(SuperFluidContext);
+
   const subscriptionOptions = [
     {
       tier: 'Follower',
@@ -108,7 +110,13 @@ const CreatorPage = ({ heroSrc, thumbnailSrc, title, description }) => {
             <Button
               variant="warning"
               className="subscribe-btn"
-              onClick={() => createFlow(opt.price)}
+              onClick={() => {
+                try {
+                  superFluid.createFlow(opt.price);
+                } catch (error) {
+                  console.log(error);
+                }
+              }}
             >
               Subscribe
             </Button>
